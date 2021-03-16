@@ -12,31 +12,31 @@ Output
 For each test case, print a single line containing one string with length N. For each valid i, the i-th character of this string should be '1' if i-th friend will be able to attend the meeting or '0' otherwise.
 
 ## Constraints
-1≤T≤500
-1≤N≤500
-each time is valid in the 12-hour clock format
-for each valid i, the time Ri is greater or equal to Li
-Subtasks
+1≤T≤500  
+1≤N≤500  
+each time is valid in the 12-hour clock format  
+for each valid i, the time Ri is greater or equal to Li  
+**Subtasks**  
 Subtask #1 (100 points): original constraints
 
 ## Example Input
-2
-12:01 AM
-4
-12:00 AM 11:42 PM
-12:01 AM 11:59 AM
-12:30 AM 12:00 PM
-11:59 AM 11:59 PM
-04:12 PM
-5
-12:00 AM 11:59 PM
-01:00 PM 04:12 PM
-04:12 PM 04:12 PM
-04:12 AM 04:12 AM
-12:00 PM 11:59 PM
-Example Output
-1100
-11101
+2  
+12:01 AM  
+4  
+12:00 AM 11:42 PM  
+12:01 AM 11:59 AM  
+12:30 AM 12:00 PM  
+11:59 AM 11:59 PM  
+04:12 PM  
+5  
+12:00 AM 11:59 PM  
+01:00 PM 04:12 PM  
+04:12 PM 04:12 PM  
+04:12 AM 04:12 AM  
+12:00 PM 11:59 PM  
+Example Output  
+1100  
+11101  
 ## Explanation
 ### Example case 1:
 
@@ -44,4 +44,4 @@ Example Output
 - Friend 2: 12:01 AM lies between 12:01 AM and 11:59 AM (between 00:01 and 11:59 in the 24-hour clock format).
 - Friend 3: 12:01 AM does not lie between 12:30 AM and 12:30 PM (between 00:30 and 12:30 in the 24-hour clock format), so this friend will not be able to attend the meeting.
 - Friend 4: 12:01 AM does not lie between 11:59 AM and 11:59 PM (between 11:59 and 23:59 in the 24-hour clock format).
-### Example case 2: For friend 3, 04:12 PM lies between 04:12 PM and 04:12 PM (inclusive) and hence this friend will be able to attend the meeting
+**Example case 2:** For friend 3, 04:12 PM lies between 04:12 PM and 04:12 PM (inclusive) and hence this friend will be able to attend the meeting
